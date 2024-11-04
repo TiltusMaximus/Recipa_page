@@ -30,7 +30,7 @@ body {
 
 .container {
     width: 804px;
-    height: 3000px;
+    height: auto;
     margin: 60px auto;
     border-radius: 26px;
     padding: 44px 44px 20px 44px;
@@ -46,43 +46,47 @@ h1 {
     color: var(--Stone-900);
     font-size: 36px;
     font-family: "Young serif", serif;
-    padding: 30px 0 30px 0;
+    margin-top: 30px;
     font-weight: 400;
 }
 
 .intro {
-    font-family: Outfit, serif;
-    padding: 30px 0 30px 0;
+    font-family: "Outfit", serif;
+    margin-top: 24px;
 }
 
 .prepa {
-    font-family: Outfit, serif;
-    padding: 15px 0 30px 0px;
+    font-family: "Outfit", serif;
+    padding: 16px 0 6px 0px;
     background-color: var(--Rose-50);
+    margin-top: 24px;
+    border-radius: 6px;
 }
 
 h2 {
     font-size: 20px;
-    padding-left: 20px;
-    padding-bottom: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
     color: var(--Rose-800);
 }
 
 .time {
-    padding-left: 42px;
+    margin-left: 42px;
     color: var(--Stone-900);
 }
 
 .time li {
-    padding: 10px 0 10px 0;
+    margin-top: 10px;
+    padding-bottom: 8px;
 }
 
 h3 {
-    padding: 26px 0 30px 0;
+    margin: 30px 0 30px 0;
     font-size: 30px;
     font-family: "Young serif", serif;
     color: var(--Brown-800);
     font-weight: 400;
+    padding-top: 20px;
 }
 
 .ingredients ul {
@@ -91,22 +95,22 @@ h3 {
 
 .lista li {
     padding-bottom: 28px;
-    font-family: Outfit, serif;
+    font-family: "Outfit", serif;
     color: var(--Stone-900);
+}
+
+.lista li::marker {
+    color: var(--Brown-800);
+    font-weight: bolder;
 }
 
 .border {
     border-top: thin solid var(--Stone-150);
+    margin-top: 10px;
 }
 
 .instructions ol {
     padding-left: 24px;
-}
-
-.listb li {
-    padding-bottom: 28px;
-    font-family: Outfit, serif;
-    color: var(--Stone-900);
 }
 
 .bold {
@@ -114,55 +118,45 @@ h3 {
 }
 
 .nutri {
-    font-family: Outfit, serif;
-    padding-bottom: 20px;
+    font-family: "Outfit", serif;
     color: var(--Stone-900);
 }
 
 .type {
-    font-family: Outfit, serif;
-    padding-bottom: 20px;
+    font-family: "Outfit", serif;
     padding-left: 24px;
     color: var(--Stone-900);
+    padding-top: 20px;
 }
 
 .value {
-    font-family: Outfit, serif;
-    padding-bottom: 20px;
+    font-family: "Outfit", serif;
     padding-left: 270px;
     font-weight: bold;
     color: var(--Brown-800);
+    padding-top: 20px;
 }
 
-table .lined {
-    border: 1px solid var(--Stone-150);
-}
-
-/*  
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--White);
-    position: relative;
-    align-self: center;
-}
-
-h1 {
-    align-self: left;
-    display: inline-flex;
-    font-family: "Young Serif", serif;
-    font-size: 22px;
-}
-
-img {
-    align-self: center;
+table {
+    border-collapse: collapse;
     width: 100%;
-    height: 250px;
 }
 
-p {
-    font-size: 16px;
-}*/
+.lined {
+    border-bottom: thin solid var(--Stone-150);
+}
+
+/* tr:not(:last-child) { 
+    border-bottom: thin solid var(--Stone-150);
+} relique */
+
+td {
+    padding: 10px;
+}
+
 /* mobile */
 @media screen and(max-width: 580px) {
+    .lined {
+        border-bottom: 0;
+    }
 }
