@@ -146,17 +146,28 @@ table {
     border-bottom: thin solid var(--Stone-150);
 }
 
-/* tr:not(:last-child) { 
-    border-bottom: thin solid var(--Stone-150);
-} relique */
-
 td {
     padding: 10px;
 }
 
 /* mobile */
-@media screen and(max-width: 580px) {
+@media screen and (max-width: 580px) {
     .lined {
         border-bottom: 0;
+    }
+    .container {
+        width: 580px;
+        height: auto;
+        background-color: var(--White);
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    header img {
+        border-radius: 0;
+    }
+
+    .mobile {
+        padding: 24px 24px 20px 24px;
     }
 }
